@@ -1,11 +1,11 @@
 rm(list = ls())
 #' https://www.ncbi.nlm.nih.gov/Traces/wgs/?page=1&view=all
 #' 02 July 2022
-sra_data <- readr::read_csv(
-  '../../data/sra/wgs_selector.csv'
-)
-sra_data <- sra_data[!is.na(sra_data$bioproject_s),]
-sra_data[sra_data$bioproject_s == 'LSAR00000000',]
+# sra_data <- readr::read_csv(
+#   '../../data/sra/wgs_selector.csv'
+# )
+# sra_data <- sra_data[!is.na(sra_data$bioproject_s),]
+# sra_data[sra_data$bioproject_s == 'LSAR00000000',]
 
 manual_sra <- readr::read_csv('../../data/manual-isolates/batch-01-antibiotics.csv')
 
